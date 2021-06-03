@@ -11,7 +11,7 @@ const Footer = () => {
 
     return (
         <>
-            <footer>
+            <footer className="footer">
                 <p>copyright © Tech Spot {year}</p>
           </footer>
         </>

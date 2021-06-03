@@ -16,10 +16,16 @@
   padding: 10px;
   color: white;
   box-shadow: 5px 3px 15px -5px black;
+  position: relative;
 }
-
+.header img{
+  position: relative;
+}
 .header h1{
   font-size: 5.50rem;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
   font-weight: 900;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-left: 15px;
@@ -31,13 +37,11 @@
 
 .main_note{
   width: 500px;
+  position: relative;
   padding: 15px 10px 5px 10px;
   margin: 20px auto;
-  
-   
-  
-  
-  
+  padding-right: 28px;
+  padding-left: 10px;
 }
 
 input{
@@ -128,13 +132,14 @@ textarea{
   height: 30px;
 }
 .note{
-  background-color: rgb(218, 185, 210);
+  background-color: rgb(180, 193, 231);
   border-radius: 7px;
   box-shadow: 0 2px 5px grey;
   padding: 10px;
   width: 240px;
   margin: 16px;
   float: left;
+  display: flex;
 }
 
 .note h1{
@@ -173,13 +178,22 @@ textarea{
   background-color: black !important;
 }
 
-footer{
+.footer{
   width: 100%;
-  position: absolute;
+  position: relative;
+  display : flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  flex-flow: row wrap;
+  flex-direction: column;
   bottom: 0;
   text-align: center;
   margin-bottom: 30px;
+  margin-top: 35rem;
   font-size: 1.5rem;
   background-color: lightcyan;
+   overscroll-behavior: auto;
+   overflow: hidden;
 }
 

@@ -1,13 +1,185 @@
-body {
+*{
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.header{
+  width: 100%;
+  line-height: 70px;
+  background-color: cyan;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  box-shadow: 5px 3px 15px -5px black;
 }
+
+.header h1{
+  font-size: 5.50rem;
+  font-weight: 900;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 15px;
+  padding-left: 20px;
+  text-shadow: 2px 8px 15px  rgb(17, 17, 17),
+              2px 8px 15px rgb(8, 5, 5);
+}
+
+
+.main_note{
+  width: 500px;
+  padding: 15px 10px 5px 10px;
+  margin: 20px auto;
+  
+   
+  
+  
+  
+}
+
+input{
+  width: 50%;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+form{
+  min-height: 50px;
+  font-size: 15px;
+  font-weight: 900;
+  color: white;
+  background-color: rgb(247, 247, 185);
+  padding: 15px 10px 5px 10px;
+  box-shadow: 3px 5px 15px -5px black;
+  border-radius: 10px;
+  position: relative;
+}
+.main_note input{
+  font-size: 25px;
+  font-weight: 900;
+}
+textarea{
+  width: 50%;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.main_note .btn{
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: rgb(9, 22, 206);
+  border: none;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 3px 3px 15px -10px darkgray;
+  border-radius: 50%;
+}
+
+.MuiButton-root .icon{
+  font-size: 25px !important;
+  font-weight: 900;
+  color: rgb(9, 22, 206);
+  cursor: pointer;
+  z-index: 222;
+  background: transparent;
+
+}
+
+.MuiButton-root:hover{
+  background-color: black !important;
+  color: black;
+}
+
+.MuiButton-root:hover .icon{
+  color: white;
+  background-color: black;
+} 
+
+.my_notes h1{
+  color: grey;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.note .deletIcon{
+  font-size: 45px;
+  width: 0.7em;
+  height: 0.7m;
+  color: rgb(9, 22, 206);
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  width: 30px;
+  height: 30px;
+}
+.note{
+  background-color: rgb(218, 185, 210);
+  border-radius: 7px;
+  box-shadow: 0 2px 5px grey;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+
+.note h1{
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+}
+
+
+.note .btn{
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 3px 3px 15px -10px darkgray;
+  border-radius: 50%;
+}
+
+.note .btn:hover{
+  background-color: black !important;
+}
+
+.note .btn:hover .deletIcon{
+  color: #fff;
+  background-color: black !important;
+}
+
+footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  background-color: lightcyan;
+}
+

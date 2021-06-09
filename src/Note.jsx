@@ -11,10 +11,10 @@ const Note = (props) => {
         props.deleteItem(props.id);
     };
     return (
-        <>
+        <>      
                 <div className="note">
                     <h1> {props.title} </h1>
-                    <br />
+                    <br/>
                     <p>{props.content}</p>
                     <Button className="btn" onClick={deleteNote}><DeleteOutlineIcon className="deletIcon" /></Button>
 

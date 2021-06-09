@@ -114,51 +114,63 @@ textarea{
   background-color: black;
 } 
 
-.my_notes h1{
-  color: grey;
-  font-size: 10px;
-  font-weight: 800;
-}
 
 .note .deletIcon{
-  font-size: 45px;
-  width: 0.7em;
-  height: 0.7m;
+ font-size: 25px !important;
+  font-weight: 900;
   color: rgb(9, 22, 206);
-  border: none;
-  border-radius: 50%;
-  outline: none;
-  width: 30px;
-  height: 30px;
+  cursor: pointer;
+  z-index: 222;
+  background: transparent;
 }
 .note{
-  background-color: rgb(180, 193, 231);
+  background-color: rgb(166, 235, 240);
   border-radius: 7px;
   box-shadow: 0 2px 5px grey;
   padding: 10px;
-  width: 240px;
+  width: 250px;
+  min-height: 100px;
+  max-height: auto;
   margin: 16px;
   float: left;
   display: flex;
+  position: relative;
+
 }
 
 .note h1{
-  font-size: 25px;
-  font-weight: 900;
-  margin-bottom: 6px;
+
+  width: 50%;
+  line-height: 1px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  margin: 20px 0;
+  font-weight: bold;
 }
 .note p {
-  font-size: 1.1em;
-  margin-bottom: 10px;
+  position: absolute;
+  float: left;
+  width: 50%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  margin: 15px 0;
+  margin-top: 30px;
+  word-break: break-all;
   white-space: pre-wrap;
 }
 
 
 .note .btn{
-  position: relative;
+ position: relative;
   float: right;
-  margin-right: 10px;
-  color: white;
+  margin-right: 0;
+  margin-top: 35px;
+  margin-left: 60px;
+  color: rgb(9, 22, 206);
   border: none;
   width: 50px;
   height: 50px;
@@ -189,8 +201,7 @@ textarea{
   flex-direction: column;
   bottom: 0;
   text-align: center;
-  margin-bottom: 30px;
-  margin-top: 35rem;
+  margin-top: 41rem;
   font-size: 1.5rem;
   background-color: lightcyan;
    overscroll-behavior: auto;

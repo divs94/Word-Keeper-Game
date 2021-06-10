@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Button from '@material-ui/core/Button';
-import QueueIcon from '@material-ui/icons/Queue';
+import AddCircleIcon from '@material-ui/icons/AddCircle';
 
 
 
@@ -57,12 +57,12 @@ const CreateNote = (props) => {
                         placeholder='Write Your Note...' onClick={expandIt} >
                     </textarea>
                     {expand?
-                    <Button onClick={addEvent} className="btn" variant="contained" color="primary">
-                      <QueueIcon className="icon"/> 
+                    <Button onClick={addEvent} className="btn" variant="contained" color="secondary">
+                            <AddCircleIcon className="icon"/>
                     </Button> :null}
               </form>
             </div>
-           
+
         </>
     );
 };

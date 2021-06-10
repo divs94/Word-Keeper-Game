@@ -2,11 +2,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
-.header{
+header{
   width: 100%;
   line-height: 70px;
   background-color: cyan;
@@ -14,20 +14,22 @@
   justify-content: start;
   align-items: center;
   padding: 10px;
-  color: black;
+  color: white;
   box-shadow: 5px 3px 15px -5px black;
   position: relative;
 }
-.header img{
+header img{
   position: relative;
+  width: 100px;
+  height: 80px;
 }
-.header h1{
+header h1{
   font-size: 5.50rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   position: relative;
   display: flex;
   flex-flow: row wrap;
   font-weight: 900;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-left: 15px;
   padding-left: 20px;
   text-shadow: 2px 8px 15px  rgb(17, 17, 17),
@@ -70,8 +72,8 @@ form{
   font-weight: 900;
 }
 textarea{
-  width: 50%;
-  line-height: 30px;
+  width: 80%;
+  line-height:830px;
   background: transparent;
   border: none;
   outline: none;
@@ -80,11 +82,12 @@ textarea{
 }
 
 .main_note .btn{
-  float: right;
+position: absolute;
+right: 0;
   margin-right: 2px;
   color: rgb(9, 22, 206);
   border: none;
-  width: 50px;
+   width: 30px;
   height: 50px;
   background: transparent;
   cursor: pointer;
@@ -96,7 +99,7 @@ textarea{
 .MuiButton-root .icon{
   font-size: 25px !important;
   font-weight: 900;
-  color: rgb(9, 22, 206);
+  color: rgb(9, 22, 206) !important;
   cursor: pointer;
   z-index: 222;
   background: transparent;
@@ -105,13 +108,13 @@ textarea{
 
 .MuiButton-root:hover{
   background-color: black !important;
-  color: black;
+  color: black !important;
 }
 
 .MuiButton-root:hover .icon{
   color: white;
   background-color: black;
-} 
+}
 
 
 .note .deletIcon{
@@ -126,45 +129,45 @@ textarea{
   background-color: rgb(166, 235, 240);
   border-radius: 7px;
   box-shadow: 0 2px 5px grey;
-  padding: 10px;
-  width: 250px;
-  min-height: 100px;
-  max-height: auto;
-  margin: 16px;
+  padding: 15px;
+  width: auto;
+  height: auto !important;
+  margin: 21.3px;
   float: left;
-  display: flex;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space:pre-wrap;
   position: relative;
-
 }
 
 .note h1{
-
+ position: relative;
   width: 50%;
   line-height: 1px;
   background: transparent;
   border: none;
   outline: none;
   font-size: 2rem;
-  margin: 20px 0;
+  margin: 15px 0;
   font-weight: bold;
 }
 .note p {
-  position: absolute;
+  position:relative;
   float: left;
-  width: 50%;
+  width: 75%;
+  height: 15%;
   background: transparent;
   border: none;
   outline: none;
-  font-size: 12px;
-  margin: 15px 0;
-  margin-top: 30px;
-  word-break: break-all;
+  margin: 5px 30px 5px 0;
+  font-size: 2rem;
   white-space: pre-wrap;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
 }
 
 
 .note .btn{
- position: relative;
   float: right;
   margin-right: 0;
   margin-top: 35px;
@@ -191,91 +194,250 @@ textarea{
 
 .footer{
   width: 100%;
-  position: relative;
   display : flex;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   flex-flow: row wrap;
   flex-direction: column;
+  position: relative;
   bottom: 0;
   text-align: center;
-  margin-top: 41rem;
+  margin-top: 45rem;
   font-size: 1.5rem;
   background-color: lightcyan;
-   overscroll-behavior: auto;
-   overflow: hidden;
-}
 
-@media only screen and (max-width: 768px){
-.header{
-  width: 100vw;
 }
-.header img{
-  width: 10vw;
-  height: 5vh;
+@media (max-width: 991px){
+header{
+  width: 100%;
 }
-.header h1{
+header img{
+ width: 80px;
+  height: 60px;
+}
+header h1{
   font-size: 3rem;
 }
 form{
   width: 55vw;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+}
+.footer{
+  width: 100%;
+  flex-flow: row wrap;
+   justify-content: center;
+}
+.note{
+  width: 35vw;
+  height: 5vh;
+  float: left;
+  position: relative;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space:pre-wrap;
+}
+.note .btn:hover{
+  background-color: black !important;
+}
+.note .btn:hover .deletIcon{
+  color: #fff;
+  background-color: black !important;
+}
+.MuiButton-root:hover{
+  background-color: black !important;
+  color: black !important;
+}
+
+.MuiButton-root:hover .icon{
+  color: white;
+  background-color: black;
+  z-index: 222;
+}
+.note h1{
+  width: 50%;
+  line-height: 1px;
+  font-size: 2rem;
+  margin: 20px 0;
+  font-weight: bold;
+   white-space: pre-wrap;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+.note p {
+  float: left;
+  width: 50%;
+  font-size: 1.5rem;
+  margin: 15px 0;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+}
+
+@media (max-width: 768px){
+header{
+  width: 100%;
+}
+header img{
+  width: 80px;
+  height: 60px;
+}
+header h1{
+  font-size: 3rem;
+}
+form{
+  width: 55vw;
+}
+.footer{
+  width: 100%;
+  flex-flow: row wrap;
+   justify-content: center;
+}
+.main_note{
+  margin: 20px 80px;
+}
+.note{
+  width: 35vw;
+  height: 5vh;
+  float: left;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space:pre-wrap;
+  position: relative;
+  overflow: auto;
+}
+.note .btn:hover{
+  background-color: black !important;
+}
+.note .btn:hover .deletIcon{
+  color: #fff;
+  background-color: black !important;
+}
+.MuiButton-root:hover{
+  background-color: black !important;
+  color: black !important;
+}
+
+.MuiButton-root:hover .icon{
+  color: white;
+  background-color: black;
+}
+.note h1{
+  position: relative;
+  width: 50%;
+  font-size: 2rem;
+  margin: 20px 0;
+  font-weight: bold;
+   white-space: pre-wrap;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+.note p {
+  float: left;
+  width: 50%;
+  font-size:1.5rem;
+  margin: 15px 0;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+
+}
 }
 
 
+@media(max-width: 480px){
+header{
+  width: 100%;
+   word-wrap: break-word;
+  white-space:pre-wrap;
 }
-@media only screen and (max-width: 480px){
-.header{
-  width: 100vw;
-}
-.header img{
+header img{
   width: 10vw;
   height: 5vh;
 }
-.header h1{
+header h1{
   font-size: 2rem;
 }
 form{
-  width: 75vw;
-  justify-content: center;
-  font-size: 5px;
-  white-space: pre-wrap;
-  margin-left: 10px;
+  width: 55vw;
+  display: grid;
+  place-items: center;
+   padding: 15px 10px 5px 10px;
+   position: relative;
+}
+.main_note{
+ margin: 20px 80px;
 }
 .main_note input{
   font-size: 2rem;
-  margin-bottom: 50px;
-}
-.main_note textarea{
-  width: 55vw;
-  line-height: 10px;
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 1rem;
-  margin-top: 20px;
-  position: absolute;
-  float: left;
-  margin-left: 4px;
+
 }
 .main_note .btn{
-  position: relative;
-  float: right;
-  margin-right: 5px;
+
   width: 4vw;
   height: 5vh;
 }
 .MuiButton-root .icon{
-  font-size: 1.5rem !important;
-  font-weight: 700;
   width: 10vw;
   height: 2vh;
 }
 .note{
-  width: 50vw;
-  height: 5vh;
+  width: 35%;
+  height: 5%;
+  float: left;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space:pre-wrap;
+  position: relative;
+}
+.footer{
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.note .btn:hover{
+  background-color: black !important;
+}
+
+.note .btn:hover .deletIcon{
+  color: #fff;
+  background-color: black !important;
+}
+.note .btn{
+ width: 2vw;
+  height: 4vh;
+  border-radius: 50%;
+}
+.MuiButton-root:hover{
+  background-color: black !important;
+  color: black !important;
+}
+
+.MuiButton-root:hover .icon{
+  color: white;
+  background-color: black;
+}
+.note h1{
+  position: relative;
+  width: 50%;
+  line-height: 1px;
+  font-size: 2rem;
+  font-weight: bold;
+   white-space: pre-wrap;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+.note p {
+  float: left;
+  width: 100%;
+  font-size: 1.5rem;
+  margin: 15px 0;
+   white-space: pre-wrap;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+.note .deletIcon{
+  z-index: 222;
 }
 }

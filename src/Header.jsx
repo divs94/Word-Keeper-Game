@@ -9,11 +9,12 @@ import React from "react";
 const Header = () => {
     return (
         <>
-            <div className="header">
+            <header>
                 <img src="https://2.bp.blogspot.com/-zIvQs25onUg/UifUadIDMuI/AAAAAAAAABc/TrZWubaCjrY/s1600/Logo+Persis.jpg"
                     alt='logo' width="80" height="60" />
                 <h1>Word Keeper</h1>
-            </div>
+
+        </header>
         </>
     );
 };

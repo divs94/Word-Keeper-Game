@@ -11,7 +11,7 @@ const Note = (props) => {
         props.deleteItem(props.id);
     };
     return (
-        <>      
+        <>
                 <div className="note">
                     <h1> {props.title} </h1>
                     <br/>
@@ -19,8 +19,8 @@ const Note = (props) => {
                     <Button className="btn" onClick={deleteNote}><DeleteOutlineIcon className="deletIcon" /></Button>
 
                 </div>
-            
-            
+
+
 
         </>
     );

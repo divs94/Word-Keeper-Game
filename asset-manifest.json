@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Word-Keeper-Game/static/css/main.955e0b87.chunk.css",
+    "main.js": "/Word-Keeper-Game/static/js/main.857a0b97.chunk.js",
+    "main.js.map": "/Word-Keeper-Game/static/js/main.857a0b97.chunk.js.map",
+    "runtime-main.js": "/Word-Keeper-Game/static/js/runtime-main.d44369ed.js",
+    "runtime-main.js.map": "/Word-Keeper-Game/static/js/runtime-main.d44369ed.js.map",
+    "static/css/2.61b4cb56.chunk.css": "/Word-Keeper-Game/static/css/2.61b4cb56.chunk.css",
+    "static/js/2.e1df93c9.chunk.js": "/Word-Keeper-Game/static/js/2.e1df93c9.chunk.js",
+    "static/js/2.e1df93c9.chunk.js.map": "/Word-Keeper-Game/static/js/2.e1df93c9.chunk.js.map",
+    "index.html": "/Word-Keeper-Game/index.html",
+    "static/css/2.61b4cb56.chunk.css.map": "/Word-Keeper-Game/static/css/2.61b4cb56.chunk.css.map",
+    "static/css/main.955e0b87.chunk.css.map": "/Word-Keeper-Game/static/css/main.955e0b87.chunk.css.map",
+    "static/js/2.e1df93c9.chunk.js.LICENSE.txt": "/Word-Keeper-Game/static/js/2.e1df93c9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d44369ed.js",
+    "static/css/2.61b4cb56.chunk.css",
+    "static/js/2.e1df93c9.chunk.js",
+    "static/css/main.955e0b87.chunk.css",
+    "static/js/main.857a0b97.chunk.js"
+  ]
+}

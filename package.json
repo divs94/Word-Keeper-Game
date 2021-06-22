@@ -1,6 +1,6 @@
 {
   "name": "googlekeeper",
-  "homepage": "https://Suraj3808.github.io/WordKeeper",
+  "homepage": "https://divs94.github.io/Word-Keeper-Game",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -42,6 +42,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.0"
+    "gh-pages": "^3.2.3"
   }
 }

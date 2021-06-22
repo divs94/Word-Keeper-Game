@@ -2,7 +2,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -25,7 +24,7 @@ header img{
 }
 header h1{
   font-size: 5.50rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   position: relative;
   display: flex;
   flex-flow: row wrap;
@@ -141,15 +140,19 @@ right: 0;
 }
 
 .note h1{
- position: relative;
   width: 50%;
   line-height: 1px;
   background: transparent;
   border: none;
   outline: none;
-  font-size: 2rem;
-  margin: 15px 0;
+  margin: 15px auto;
   font-weight: bold;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  display: inline;
+  font-size: 2rem;
+  font-weight: 700;
 }
 .note p {
   position:relative;
@@ -159,8 +162,8 @@ right: 0;
   background: transparent;
   border: none;
   outline: none;
-  margin: 5px 30px 5px 0;
-  font-size: 2rem;
+  margin: 5px 10px 5px 0;
+  font-size: 1.6rem;
   white-space: pre-wrap;
   text-overflow: ellipsis;
   word-wrap: break-word;
@@ -343,10 +346,14 @@ form{
   word-wrap: break-word;
 
 }
+.main_note .btn{
+ width: 5px;
+ height: 45px;
+}
 }
 
 
-@media(max-width: 480px){
+@media(max-width: 368px){
 header{
   width: 100%;
    word-wrap: break-word;
@@ -363,23 +370,22 @@ form{
   width: 55vw;
   display: grid;
   place-items: center;
-   padding: 15px 10px 5px 10px;
    position: relative;
 }
 .main_note{
- margin: 20px 80px;
+ margin: 20px 65px;
 }
 .main_note input{
   font-size: 2rem;
 
 }
 .main_note .btn{
-
-  width: 4vw;
-  height: 5vh;
+  width: 2px;
+ height: 40px;
+ z-index: 222;
 }
 .MuiButton-root .icon{
-  width: 10vw;
+  width: 5vw;
   height: 2vh;
 }
 .note{
@@ -390,6 +396,12 @@ form{
   word-wrap: break-word;
   white-space:pre-wrap;
   position: relative;
+}
+.note h1{
+font-size: 6px;
+  word-wrap: break-word;
+  white-space:pre-wrap;
+ line-height: 1px;
 }
 .footer{
   width: 100%;
@@ -422,7 +434,6 @@ form{
   position: relative;
   width: 50%;
   line-height: 1px;
-  font-size: 2rem;
   font-weight: bold;
    white-space: pre-wrap;
   text-overflow: ellipsis;
